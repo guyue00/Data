@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.ethanco.titlebar.TitleBar
+                    android:id="@+id/title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/gray1"
+                    app:bottom_divider_color="#D8D9DA"
+                    app:bottom_divider_visible="true"
+                    app:leftIc="@drawable/ic_return"
+                    app:leftIc_LeftPadding="8dp"
+                    app:leftIc_RightPadding="2dp"
+                    app:leftText="返回"
+                    app:rightIc="@drawable/ic_star"
+                    app:rightText="收藏"
+                    app:rightText_LeftPadding="8dp"
+                    app:rightText_RightPadding="16dp"
+                    app:bar_text_color="#FFF"
+                    app:title_textSize="20sp"
+                    app:common_textSize="16sp"
+                    app:title="标题"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_make"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="交易额"
+                    android:textSize="14sp" />
+                <com.idtk.smallchart.chart.CombineChart
+                    android:id="@+id/combineChart"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+               <!-- <TextView
+                    android:id="@+id/text_make1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="XXXX表"
+                    android:textSize="14sp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_make2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="交易笔数"
+                    android:textSize="14sp" />
+                <com.idtk.smallchart.chart.CombineChart
+                    android:id="@+id/combineChart2"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

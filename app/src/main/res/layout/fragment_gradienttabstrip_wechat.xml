@@ -1,0 +1,165 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.GradientTabStripFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:background="#c6c6c6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.jude.rollviewpager.RollPagerView
+                    android:id="@+id/loop_view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    app:rollviewpager_play_delay="3000"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="7dp"
+                android:background="#c6c6c6"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_horizontal"
+                        app:srcCompat="@drawable/linechart1" />
+
+                    <TextView
+                        android:id="@+id/fgb_tv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:text="交易分析"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_line1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="139dp"
+                    android:layout_marginTop="3.5dp"
+                    android:background="#c6c6c6" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_horizontal"
+                        app:srcCompat="@drawable/linechart2" />
+
+                    <TextView
+                        android:id="@+id/fgb_tv_content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:text="报表"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="7dp"
+                android:background="#c6c6c6"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fgb_tv_content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="目前累计:\n1024元"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_line"
+                    android:layout_width="0.5dp"
+                    android:layout_height="139dp"
+                    android:layout_marginTop="3.5dp"
+                    android:background="#c6c6c6" />
+
+                <TextView
+                    android:id="@+id/fgb_tv_content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="88笔"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="7dp"
+                android:background="#c6c6c6"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

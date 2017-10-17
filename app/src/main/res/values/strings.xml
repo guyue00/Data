@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GradientTabStrip</string>
+    <string name="gradienttabstrip_title">渐变Tab</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+</resources>
